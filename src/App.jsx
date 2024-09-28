@@ -22,15 +22,9 @@ const App = () => {
 
   return (
     <Router>
-      <div className="">
-        <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
-            {/* Add more routes for other pages like Events, Team, etc. */}
-          </Routes>
-        </main>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} toggleTheme={toggleTheme} />} />
+      </Routes>
     </Router>
   );
 };

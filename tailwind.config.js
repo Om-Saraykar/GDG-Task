@@ -29,6 +29,12 @@ export const theme = {
       'custom-dark': '0px 4px 20px 0px #ffffff1a'
 
     },
+    screens: {
+      'xs': '480px',    // Extra small devices (phones, <600px)
+      '2xl': '1440px',  // Custom 2xl breakpoint
+      '3xl': '1600px',  // Custom 3xl breakpoint
+      'mm': '1111px'
+    },
   },
 };
 export const plugins = [];
