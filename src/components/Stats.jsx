@@ -9,7 +9,7 @@ const statsData = [
 
 const Stats = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-around py-[15rem] px-4">
+    <section className="flex flex-col lg:flex-row justify-around py-[15rem] px-4">
       {statsData.map((stat, index) => (
         <div key={index} className="flex flex-col items-center w-full lg:w-1/5 mb-10 lg:mb-0">
           {/* Circle Container */}
@@ -20,24 +20,28 @@ const Stats = () => {
               style={{
                 clipPath: 'polygon(50% 50%, -200% 50%, 50% -200%)',
               }}
+              aria-hidden="true"
             ></div>
             <div
               className="absolute inset-0 rounded-full border-[15px] lg:border-[20px] border-primary"
               style={{
                 clipPath: 'polygon(50% 50%, 50% -200%, 200% 50%)',
               }}
+              aria-hidden="true"
             ></div>
             <div
               className="absolute inset-0 rounded-full border-[15px] lg:border-[20px] border-googleYellow"
               style={{
                 clipPath: 'polygon(50% 50%, 200% 50%, 50% 200%)',
               }}
+              aria-hidden="true"
             ></div>
             <div
               className="absolute inset-0 rounded-full border-[15px] lg:border-[20px] border-googleGreen"
               style={{
                 clipPath: 'polygon(50% 50%, -200% 50%, 50% 200%)',
               }}
+              aria-hidden="true"
             ></div>
             {/* Text inside the circle */}
             <span className={`${stat.value.length > 2 ? 'text-[50px] lg:text-[60px]' : 'text-[60px] lg:text-[75px]'} font-bold text-fontColor dark:text-darkFontColor`}>
@@ -50,7 +54,7 @@ const Stats = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

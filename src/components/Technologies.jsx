@@ -21,7 +21,7 @@ const technologies = [
 
 const Technologies = () => {
   return (
-    <div className="flex flex-col items-center py-10">
+    <section className="flex flex-col items-center py-10">
       <div className='flex items-center gap-10 lg:gap-20'>
         <div className='h-2 w-[0px] lg:w-[200px] xl:w-[300px] bg-googleRed rounded'></div>
         <h2 className="text-[40px] md:text-[50px] lg:text-[70px] text-fontColor dark:text-darkFontColor font-bold text-center">Technologies</h2>
@@ -32,19 +32,21 @@ const Technologies = () => {
       </p>
       <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-20 py-10 lg:py-[10rem]">
         {technologies.map((tech, index) => (
-          <div key={index} className="flex flex-col items-center w-full max-w-xs mx-auto">
+          <article key={index} className="flex flex-col items-center w-full max-w-xs mx-auto">
             <div className={`border-t-8 border-${tech.color} w-1/2 mx-auto rounded mb-2`}></div>
             <div
               className={`h-[250px] w-[230px] md:h-[300px] md:w-[280px] flex flex-col items-center justify-center py-10 gap-2 p-4 rounded-3xl relative transition-transform transform hover:scale-105 cursor-pointer shadow-custom dark:shadow-custom-dark`}
+              role="button"
+              aria-label={`Learn more about ${tech.name}`}
             >
               <img src={tech.logo} alt={tech.name} className="h-[80px] md:h-[120px] w-auto mx-auto" />
               <h3 className="text-[30px] md:text-[36px] lg:text-[40px] text-fontColor dark:text-darkFontColor font-medium text-center">{tech.name}</h3>
-              <img src={images.vector} alt="" className="h-[15px]" />
+              <img src={images.vector} alt="" className="h-[15px]" aria-hidden="true" />
             </div>
-          </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

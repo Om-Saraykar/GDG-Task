@@ -57,7 +57,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-full max-w-[1000px] mx-auto mt-8 px-2 md:px-4">
+    <section className="w-full max-w-[1000px] mx-auto mt-8 px-2 md:px-4">
       <h2 className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-fontColor dark:text-darkFontColor font-bold text-center mb-[20px] sm:mb-[40px] lg:mb-[60px]">FAQs</h2>
       {faqData.map((faq, index) => (
         <div key={index} className="mb-4 flex flex-col items-center">
@@ -66,6 +66,7 @@ const FAQ = () => {
             className={`w-full text-left p-2 sm:p-3 rounded-full focus:outline-none border-[6px] sm:border-[8px] border-[#E1E1E1] dark:border-[#4A4A4A] transition-all duration-300`}
             aria-expanded={activeIndices.includes(index)}
             aria-controls={`faq-content-${index}`}
+            aria-label={activeIndices.includes(index) ? `Collapse ${faq.question}` : `Expand ${faq.question}`}
           >
             <div className="flex items-center justify-start px-1 sm:px-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
               <span className={`transform transition-transform duration-500 ${activeIndices.includes(index) ? "rotate-180" : "rotate-0"}`}>
@@ -87,7 +88,7 @@ const FAQ = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

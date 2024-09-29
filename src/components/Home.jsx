@@ -11,7 +11,7 @@ const Home = ({ isDarkMode, setIsDarkMode, toggleTheme }) => {
   return (
     <div>
       <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <div className="text-center py-14 px-4 dark:bg-[#181818]">
+      <main className="text-center py-14 px-4 dark:bg-[#181818]">
         <h1 className="text-[40px] md:text-[60px] lg:text-[84px] font-bold dark:text-darkFontColor">
           <span className="text-[#4285F4]">G</span>
           <span className="text-[#DB4437]">o</span>
@@ -21,9 +21,9 @@ const Home = ({ isDarkMode, setIsDarkMode, toggleTheme }) => {
           <span className="text-[#DB4437]">e</span>
           <span className="text-heading dark:text-white"> Developer Groups</span>
         </h1>
-        <h3 className="text-[30px] md:text-[50px] lg:text-[50px] font-bold text-[#646464] dark:text-[#A0A0A0]">
+        <h2 className="text-[30px] md:text-[50px] lg:text-[50px] font-bold text-[#646464] dark:text-[#A0A0A0]">
           RBU Chapter
-        </h3>
+        </h2>
         <div className="mt-10 mb-6">
           <img 
             src={images.centerImage} 
@@ -42,7 +42,7 @@ const Home = ({ isDarkMode, setIsDarkMode, toggleTheme }) => {
         <Stats />
         <Technologies />
         <FAQ />
-      </div>
+      </main>
       <Footer isDarkMode={isDarkMode} />
     </div>
   );
