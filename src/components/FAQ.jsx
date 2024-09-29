@@ -67,11 +67,11 @@ const FAQ = () => {
             aria-expanded={activeIndices.includes(index)}
             aria-controls={`faq-content-${index}`}
           >
-            <div className="flex items-center px-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
+            <div className="flex items-center justify-start px-1 sm:px-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
               <span className={`transform transition-transform duration-500 ${activeIndices.includes(index) ? "rotate-180" : "rotate-0"}`}>
-                <img src={imageSources[index % imageSources.length]} alt="Expand/Collapse Icon" className="h-3 sm:h-4 md:h-5"/>
+                <img src={imageSources[index % imageSources.length]} alt="Expand/Collapse Icon" className="h-2 sm:h-4 md:h-5"/>
               </span>
-              <span className="text-[12px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-bold text-fontColor dark:text-darkFontColor">{faq.question}</span>
+              <span className="text-[14px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-bold text-fontColor dark:text-darkFontColor">{faq.question}</span>
             </div>
           </button>
           <div
@@ -81,7 +81,7 @@ const FAQ = () => {
               ${borderColors[index % borderColors.length]}
               ${darkBorderColors[index % darkBorderColors.length]}`}
           >
-            <div className="p-3 sm:p-4 md:p-5 text-fontColor dark:text-darkFontColor text-left text-[12px] sm:text-[20px] md:text-[22px] lg:text-[25px] rounded-b-md">
+            <div className="p-3 sm:p-4 md:p-5 text-fontColor dark:text-darkFontColor text-left text-[16px] sm:text-[20px] md:text-[22px] lg:text-[25px] rounded-b-md">
               {faq.answer}
             </div>
           </div>
