@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import './index.css'; // Import the Tailwind CSS file
+import './index.css';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -10,7 +10,6 @@ const App = () => {
     setIsDarkMode(prevMode => !prevMode);
   };
 
-  // Effect to apply dark mode class to the body
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark');
