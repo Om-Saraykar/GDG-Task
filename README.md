@@ -1,6 +1,6 @@
 # GDG - RBU Chapter Website
 
-Welcome to the GDG - RBU Chapter website! This dynamic platform serves as a hub for tech enthusiasts at RCOEM, aiming to empower students through community engagement and access to Google developer technologies.
+Welcome to the GDG - RBU Chapter website! This dynamic platform serves as a hub for tech enthusiasts at RBU, aiming to empower students through community engagement and access to Google developer technologies.
 
 ## Table of Contents
 
