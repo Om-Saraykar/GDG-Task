@@ -49,8 +49,6 @@ The GDG - RBU Chapter website is deployed on [Vercel](https://gdg-task.vercel.ap
 
 Here's the updated **Getting Started** section that clearly mentions the two ways to run the project:
 
----
-
 ## **Getting Started**
 
 You can run this project in two ways: using the standard setup or using Docker. Follow the instructions below for your preferred method.
